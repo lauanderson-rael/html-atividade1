@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#404467;
+}
+
+body{
+    padding: 20px 70px;
+    color: #fcfcfc;
+    
+}
+
+ol{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    width: 1000px;
+    height: 225px;
+    
+    
+}
+
+ol li{
+    width: 250px;
+    height: 80px;
+    border: 2px solid black;
+    padding: 20px 20px;
+    border-radius: 30px 5px 30px 5px ;
+    margin: 20px;
+}
+
+a:link {
+    color: #fcfcfc;
+    text-decoration:underline;
+}
+
+.image{
+    border-radius: 20px;
+    box-shadow: inset;
+}

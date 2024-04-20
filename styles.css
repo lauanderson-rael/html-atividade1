@@ -30,7 +30,7 @@ ol li{
     margin: 20px;
 }
 
-a:link {
+a {
     color: #fcfcfc;
     text-decoration:underline;
 }

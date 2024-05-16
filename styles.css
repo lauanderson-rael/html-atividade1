@@ -1,46 +1,123 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:#404467;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e2e2e2;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    padding: 20px 70px;
-    color: #ffd000;
-    
+* h2 {
+  margin-top: 26px;
+  background-color: #a0c5ab;
+  padding: 10px 5px;
+  border-top: 4px solid #14af45;
+  color: #0b5516;
 }
 
-ol{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    list-style: none;
-    width: 1000px;
-    height: 225px;
-    
-    
+.container {
+  padding: 10px 100px;
+  color: #000;
+  background-color: #e2e2e2;
 }
 
-ol li{
-    width: 250px;
-    height: 80px;
-    border: 2px solid black;
-    padding: 20px 20px;
-    border-radius: 30px 5px 30px 5px ;
-    margin: 20px;
+/* topo do site */
+.topo-do-site h1 {
+  margin-bottom: 0px;
+}
+.topo-do-site {
+  display: flex;
+  flex-direction: column;
+}
+.topo-do-site .img-curso img {
+  border-radius: 0px;
+}
+
+/* detalhes sobre o curso */
+.sobre ul {
+  list-style-type: none;
+}
+.sobre span {
+  font-weight: 700;
+}
+
+/* disciplinas */
+.disciplinas ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  width: 1000px;
+  height: 225px;
+  text-align: center;
+}
+
+.disciplinas a {
+  color: #fff;
+  background-color: #0b5516;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.disciplinas ol a {
+  width: 250px;
+  height: 80px;
+  padding: 20px 20px;
+  margin: 20px 4%;
+}
+
+.disciplinas li {
+  background-color: #0b5516;
+  border: none;
+  color: #fff;
 }
 
 a {
-    color: #fcfcfc;
-    list-style: none;
-    text-decoration:underline;
+  color: #000;
+  list-style: none;
+  text-decoration: underline;
 }
 
-.image{
-    border-radius: 20px;
-    box-shadow: inset;
+/* horarios */
+.horarios {
+  display: flex;
+  justify-content: flex-start;
+}
+.image {
+  box-shadow: inset;
 }
 
-p{
-    color: #fcfcfc;
+/* Voltar ao topo*/
+.voltar-ao-topo {
+  display: flex;
+  flex-direction: column;
+  gap: 50px 0;
+}
+.voltar-ao-topo .barra {
+  width: 100%;
+  height: 5px;
+  background-color: #14af45;
+  margin-top: 35px;
+}
+.voltar-ao-topo > a {
+  font-size: 16px;
+}
+
+/* footer */
+.container-footer {
+  font-size: 15px;
+  text-align: center;
+  background-color: #0b5516;
+  color: #fff;
+  padding: 10px 70px;
+  margin-top: 40px;
+  width: 100%;
+}
+.container-footer footer,
+.container-footer p {
+  background-color: #0b5516;
 }

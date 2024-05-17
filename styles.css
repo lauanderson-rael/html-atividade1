@@ -191,30 +191,18 @@ a {
 /* footer */
 .container-footer {
   font-size: 15px;
-  text-align: center;
+  display: grid;
+  place-items: center;
   background-color: #0b5516;
   color: #fff;
-  padding: 25px 0px;
-  margin-top: 40px;
+  height: 220px;
   width: 100%; /* Alterado de 100% para 100vw */
+  text-align: center;
+  margin-top: 180px;
 }
 .container-footer footer,
 .container-footer p {
   background-color: #0b5516;
-}
-
-/* RESPONSIVO - FOOTER */
-@media (max-width: 1020px) {
-  .container-footer {
-    width: 100%;
-    height: 272px;
-    display: grid;
-    place-items: center;
-  }
-  .container-footer p {
-    font-size: 11px;
-    padding: 10px;
-  }
 }
 
 /* Estilos para a barra de rolagem */
@@ -274,16 +262,6 @@ body::-webkit-scrollbar-thumb:hover {
   border: 0;
 }
 
-/* footer */
-.container-footer {
-  font-size: 15px;
-  text-align: center;
-  background-color: #0b5516;
-  color: #fff;
-  padding: 18px 0px;
-  margin-top: 44px;
-  width: 100%;
-}
 .container-footer footer,
 .container-footer p {
   background-color: #0b5516;
@@ -296,18 +274,37 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
   }
   .container-disciplina {
+    display: flex;
     padding: 3px 10px;
   }
   .container-disciplina header img {
     width: 130px;
   }
   .container-disciplina h1 {
-    font-size: 23px;
+    font-size: 15px;
   }
   .container-disciplina .img-curso img {
     width: 100%;
   }
   .container-disciplina h2 {
-    font-size: 18px;
+    font-size: 15px;
+  }
+}
+
+/* RESPONSIVO - FOOTER */
+@media (max-width: 1020px) {
+  .container-disciplina {
+    flex: 1; /* Faz com que o conteúdo principal ocupe todo o espaço restante */
+    margin-bottom: 60px; /* Altura estimada do footer */
+  }
+  .container-footer,
+  .container-footer2 {
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+  }
+  .container-footer p {
+    font-size: 11px;
+    padding: 10px;
   }
 }
